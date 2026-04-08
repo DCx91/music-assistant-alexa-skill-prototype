@@ -1,0 +1,8 @@
+#!/usr/bin/with-contenv bashio
+bashio::log.info "alexa-skill: starting Flask application..."
+
+PORT="$(bashio::config 'PORT' '5000' || echo '5000')"
+
+bashio::log.info "alexa-skill: PORT=${PORT}"
+
+exec /app/venv/bin/python /app/app/app.py
