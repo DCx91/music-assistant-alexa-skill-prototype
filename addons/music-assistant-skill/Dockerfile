@@ -1,8 +1,6 @@
 ARG BUILD_FROM=ghcr.io/home-assistant/base:latest
 FROM ${BUILD_FROM}
 RUN apk add --no-cache \
-    nodejs \
-    npm \
     curl \
     ca-certificates \
     openssl \
@@ -62,7 +60,6 @@ if needle in src:
 else:
     print('No patch needed for verifier.py')
 PY
-RUN npm install -g ask-cli || true
 COPY app /app/app
 COPY assets /app/assets
 COPY scripts /app/scripts
