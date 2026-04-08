@@ -1,4 +1,5 @@
 ask-sdk
+awscli
 babel
 flask
 flask_ask_sdk
