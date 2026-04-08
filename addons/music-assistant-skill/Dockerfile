@@ -68,7 +68,7 @@ COPY assets /app/assets
 COPY scripts /app/scripts
 RUN chmod +x /app/scripts/ask_create_skill.sh || true
 
-COPY rootfs /
+COPY addons/music-assistant-skill/rootfs /
 RUN chmod a+x \
     /etc/s6-overlay/s6-rc.d/init-alexa-skill/up \
     /etc/s6-overlay/s6-rc.d/alexa-skill/run \
