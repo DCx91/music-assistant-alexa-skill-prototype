@@ -21,14 +21,14 @@ options:
   APP_USERNAME: "ma-alexa"
   APP_PASSWORD: ""
   PORT: 5000
-  LOCALE: "en-US"
+  LOCALE: "en-GB"
   AWS_DEFAULT_REGION: "eu-west-2a"
 
 schema:
   SKILL_HOSTNAME: str
   MA_HOSTNAME: str
   APP_USERNAME: str
-  APP_PASSWORD: str
+  APP_PASSWORD: password
   PORT: int
   LOCALE: str
   AWS_DEFAULT_REGION: str
